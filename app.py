@@ -2,6 +2,8 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
+from tkinter.scrolledtext import*
+import tkinter.filedialog
 
 
 
@@ -42,5 +44,35 @@ label4.grid(column = 0, row = 0)
 
 tab_control.pack(expand = 1, fill ='both')
 
+#Functions
+
+
+#Main Home Tab
+l1 = Label(tab1, text = 'Enter Text to Summarize', padx = 5, pady = 5)
+l1.grid(column = 0, row = 1)
+entry = ScrolledText(tab1, height = 10)
+entry.grid(row = 2, column = 0, columnspan = 2, pady = 5, padx = 5)
+
+#Buttons
+button1 = Button(tab1, text = 'Reset', width = 12,
+                 bg = '#25d366', fg = '#fff')
+button1.grid(row = 4, column = 0, pady = 10, padx = 10)
+
+button1 = Button(tab1, text = 'Save', width = 12,
+                 bg = '#', fg = '#fff')
+button1.grid(row = 4, column = 0, pady = 10, padx = 10)
+
+button1 = Button(tab1, text = 'Reset', width = 12,
+                 bg = '#25d366', fg = '#fff')
+button1.grid(row = 4, column = 0, pady = 10, padx = 10)
+
+button1 = Button(tab1, text = 'Reset', width = 12,
+                 bg = '#25d366', fg = '#fff')
+button1.grid(row = 4, column = 0, pady = 10, padx = 10)
+
+button1 = Button(tab1, text = 'Reset', width = 12,
+                 bg = '#25d366', fg = '#fff')
+button1.grid(row = 4, column = 0, pady = 10, padx = 10)
+#File Processing Tab
 
 window.mainloop()
